@@ -15,8 +15,8 @@ To add acknowledgements or a dedication, you should modify:
 * [layout/dedication](layout/dedication.tex)
 
 The content of the thesis chapters is in:
-* [1](chaps/1.tex)
-* [2](chaps/2.tex)
+* [chaps/1](chaps/1.tex)
+* [chaps/2](chaps/2.tex)
 ...
 
 The content of the appendices is in:
