@@ -1,0 +1,90 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\label{form_last}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Formulaire / Form
+%%% Remplacer les paramètres des \newcommand par les informations demandées / Replace \newcommand parameters by asked informations
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\PhDTitleFR}{titre (en français)}													%% Titre de la thèse en français / Thesis title in french
+\newcommand{\keywordsFR}{3 à 6 mots clés}														%% Mots clés en français, séprarés par des , / Keywords in french, separated by ,
+\newcommand{\abstractFR}{\lipsum[1-3]}															%% Résumé en français / abstract in french
+
+\newcommand{\PhDTitleEN}{titre (en anglais)}													%% Titre de la thèse en anglais / Thesis title in english
+\newcommand{\keywordsEN}{3 à 6 mots clés}														%% Mots clés en anglais, séprarés par des , / Keywords in english, separated by ,
+\newcommand{\abstractEN}{\lipsum[1-3]}															%% Résumé en anglais / abstract in english
+
+\label{layout_last}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Mise en page / Page layout      
+%%% NE RIEN MODIFIER / DO NOT MODIFY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{empty}
+
+\begin{textblock*}{61mm}(16mm,3mm)
+    \textblockcolour{white}
+	\noindent\includegraphics[height=20mm]{media/L2EP.jpg}
+\end{textblock*}
+
+
+
+%%%Titre de la thèse en français / Thesis title in french
+\begin{singlespace}
+\begin{center}
+\fcolorbox{bordeau}{white}{\parbox{0.95\textwidth}{
+{\bf Titre:} \PhDTitleFR 
+\medskip
+
+%%%Mots clés en français, séprarés par des ; / Keywords in french, separated by ;
+{\bf Mots clés:} \keywordsFR 
+\vspace{-2mm}
+
+%%% Résumé en français / abstract in french
+\begin{multicols}{2}
+{\bf Résumé:} 
+\abstractFR 
+\end{multicols}
+}}
+\end{center}
+
+\vspace*{0mm}
+
+%%%Titre de la thèse en anglais / Thesis title in english
+\begin{center}
+\fcolorbox{bordeau}{white}{\parbox{0.95\textwidth}{
+{\bf Title:} \PhDTitleEN 
+
+\medskip
+
+%%%Mots clés en anglais, séprarés par des ; / Keywords in english, separated by ;
+{\bf Keywords:}  \keywordsEN %%3 à 6 mots clés%%
+\vspace{-2mm}
+\begin{multicols}{2}
+	
+%%% Résumé en anglais / abstract in english
+{\bf Abstract:} 
+\abstractEN
+\end{multicols}
+}}
+\end{center}
+
+\begin{textblock*}{161mm}(10mm,270mm)
+\textblockcolour{white}
+\color{bordeau}
+{\bf\noindent Université de Lille	         }
+
+\noindent L2EP / IRCICA
+
+\noindent 50 Avenue Halley, 59650 Villeneuve-d'Ascq, France
+\end{textblock*}
+
+\begin{textblock*}{0mm}(182mm,255mm)
+\textblockcolour{white}
+\includegraphics[width=24mm]{media/petit_ULille.png}
+\end{textblock*}
+\end{singlespace}

@@ -1,0 +1,172 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Modèle inspiré par la couverture des thèses préparées à l'Université Paris-Saclay
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Version adaptée le 30 juin 2022 par Elis de Castro
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\label{form_first}
+
+%%% Formulaire / Form
+%%% Remplacer les paramètres des \newcommand par les informations demandées / Replace \newcommand parameters by asked informations
+%%%
+
+\newcommand{\ecodoctitle}{Dénomination} 													%% Nom de l'ED.
+\newcommand{\ecodocacro}{Sigle}																%% Sigle de l'ED.
+\newcommand{\ecodocnum}{000} 																%% Numéro de l'école doctorale / Doctoral School number
+\newcommand{\PhDspeciality}{voir spécialités par l'ED} 										%% Spécialité de doctorat / Speciality 
+\newcommand{\PhDworkingplace}{Nom de l'établissement} 										%% Établissement de préparation / PhD working place
+\newcommand{\defenseplace}{Ville de soutenance} 											%% Ville de soutenance / Place of defense
+\newcommand{\defensedate}{Date} 															%% Date de soutenance / Date of defense
+
+\newcommand{\logoEtt}{blank}																%% position of the logos
+\newcommand{\vpostt}{0.3} 																	%% position of the logos
+\newcommand{\hpostt}{5}																		%% position of the logos
+\newcommand{\vposth}{1.4} 																	%% position of the logos
+\newcommand{\vpos}{0.3}																		%% position of the logos
+\newcommand{\hpos}{10}																		%% position of the logos
+
+%%% JURY
+
+% Lors du premier dépôt de la thèse le nom du président nest pas connu, le choix du président se fait par les membres du Jury juste avant la soutenance. La précision est apportée sur la couverture lors du second dépôt / Choice of the jury's president is made during the defense. Thus, it must be specified only for the second file deposition in ADUM.
+% Tous les membres du juty listés doivent avoir été présents lors de la soutenance / All the jury members listed here must have been present during the defense.
+
+%%% Membre n°1 (Président) / Member n°1 (President)
+\newcommand{\jurynameA}{Prénom Nom}
+\newcommand{\juryadressA}{Statut, Établissement (Unité de recherche)}
+\newcommand{\juryroleA}{Président}
+
+%%% Membre n°2 (Rapporteur) / Member n°2 (Reviewer)
+\newcommand{\jurynameB}{Prénom Nom}
+\newcommand{\juryadressB}{Statut, Établissement (Unité de recherche)}
+\newcommand{\juryroleB}{Rapporteur}
+
+%%% Membre n°3 (Rapporteur) / Member n°3 (Reviewer)
+\newcommand{\jurynameC}{Prénom Nom}
+\newcommand{\juryadressC}{Statut, Établissement (Unité de recherche)}
+\newcommand{\juryroleC}{Rapporteur}
+
+%%% Membre n°4 (Examinateur) / Member n°4 (Examiner)
+\newcommand{\jurynameD}{Prénom Nom}
+\newcommand{\juryadressD}{Statut, Établissement (Unité de recherche)}
+\newcommand{\juryroleD}{Examinateur}
+
+%%% Membre n°5 (Directeur de thèse) / Member n°5 (Thesis supervisor)
+\newcommand{\jurynameE}{Prénom Nom}
+\newcommand{\juryadressE}{Statut, Établissement (Unité de recherche)}
+\newcommand{\juryroleE}{Directeur de thèse}
+
+%%% Membre n°6 (Co-directeur de thèse) / Member n°6 (Thesis co-supervisor)
+\newcommand{\jurynameF}{Prénom Nom}
+\newcommand{\juryadressF}{Statut, Établissement (Unité de recherche)}
+\newcommand{\juryroleF}{Co-directeur de thèse}
+
+%%% Membre n°7 (Invité) / Member n°7 (Guest)
+\newcommand{\jurynameG}{Prénom Nom}
+\newcommand{\juryadressG}{Statut, Établissement (Unité de recherche)}
+\newcommand{\juryroleG}{Invité}
+
+%%% Membre n°8 (Invité) / Member n°8 (Guest)
+\newcommand{\jurynameH}{Prénom Nom}
+\newcommand{\juryadressH}{Statut, Établissement (Unité de recherche)}
+\newcommand{\juryroleH}{Invité}
+
+%% Il est possible d'ajouter des membres supplémentaires selon le même modèle / More jury members can be added according to the same model
+
+\label{layout_first}
+%%% Mise en page / Page layout      
+%%% NE RIEN MODIFIER EXCEPTÉ LA PARTIE CONCERNANT LE JURY (voir \label{jury}) SI BESOIN / DO NOT MODIFY EXCEPT SECTION CONCERNING JURY (see \label{jury}) IF NEEDED
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\thispagestyle{empty}
+.
+\begin{textblock}{5}(0,0)
+	\textblockcolour{bordeau}
+% 	\includegraphics [scale=1]{media/bande_UL.png}
+    \includegraphics [width=60mm]{media/Logo-ULille.png}
+	\vspace{300mm}
+\end{textblock}
+
+\begin{textblock}{1}(0.6,9.5)
+	\Huge{\rotatebox{90}{\color{white}{\fontsize{38}{54}\selectfont Thèse de doctorat}}}
+\end{textblock}
+
+\begin{textblock}{1}(\hpostt,\vpostt)
+	\textblockcolour{white}
+    \includegraphics[width=50mm]{media/L2EP.jpg}
+\end{textblock}
+
+
+% If you have more logos to add, you can save them in {media} and uncoment :
+
+% \begin{textblock}{1}(\hpos,\vpos)
+% 	\textblockcolour{white}
+%     \includegraphics[width=55mm]{media/}
+% \end{textblock}
+
+% \begin{textblock}{1}(\hpos,\vposth)
+% 	\textblockcolour{white}
+%     \includegraphics[width=60mm]{media/}
+% \end{textblock}
+
+% \begin{textblock}{1}(\hpostt,\vposth)
+% 	\textblockcolour{white}
+%     \includegraphics[width=55mm]{media/}
+% \end{textblock}
+
+%% Texte
+\begin{singlespace}
+\begin{textblock}{10}(5.7,3.5)
+	\textblockcolour{white}
+	
+	\color{bordeau}
+	\begin{flushright}
+
+		\huge{\PhDTitle} \bigskip %% Titre de la thèse 
+		\vfill
+		\color{black} %% Couleur noire du reste du texte
+		\normalsize {Thèse de doctorat de l'Université Paris-Saclay} \\
+		préparée à \PhDworkingplace \\ \bigskip
+		\vfill
+		École doctorale n$^{\circ}$\ecodocnum ~\ecodoctitle ~(\ecodocacro)  \\
+		
+		\small{Spécialité de doctorat: \PhDspeciality} \bigskip %% Spécialité 
+		\vfill  
+		\footnotesize{Thèse présentée et soutenue à \defenseplace, le \defensedate, par} \bigskip
+		\vfill
+		\Large{\textbf{\textsc{\PhDname}}} %% Nom du docteur
+		\vfill
+	\end{flushright}
+	
+	\color{black}
+	%% Jury
+	\begin{flushleft}
+		
+		\small Composition du Jury :
+	\end{flushleft}
+	%% Members of the jury
+
+	\small
+	%\begin{center}
+	\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+	\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}lm{#1}}
+	
+	\label{jury} 																				%% Mettre à jour si des membres ont été ajoutés ou retirés / Update if members have been added or removed
+	\begin{flushleft}
+	\begin{tabular}{@{} L{9.5cm} R{4.5cm}}
+		\jurynameA  \\ \juryadressA & \juryroleA \\[5pt]
+		\jurynameB  \\ \juryadressB & \juryroleB \\[5pt]
+		\jurynameC  \\ \juryadressC & \juryroleC \\[5pt]
+		\jurynameD  \\ \juryadressD & \juryroleD \\[5pt]
+		\jurynameE  \\ \juryadressE & \juryroleE \\[5pt]
+		\jurynameF  \\ \juryadressF & \juryroleF \\[5pt]
+		\jurynameG  \\ \juryadressG & \juryroleG \\[5pt]
+		\jurynameH  \\ \juryadressH & \juryroleH \\[5pt]
+	\end{tabular} 
+	\end{flushleft}   
+	%\end{center}
+\end{textblock}
+\end{singlespace}
+\afterpage{\blankpage}
